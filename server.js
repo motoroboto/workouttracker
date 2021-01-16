@@ -12,12 +12,15 @@ app.use(logger("dev"));
 app.use(require('./routes/api-routes'));
 app.use(require('./routes/html-routes'));
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workouts", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
-});
+mongoose.connect(
+    process.env.MONGODB_URI || 'mongodb://localhost/workouts',
+    {
+        useNewUrlParser: true,
+        useUnifiedTopology: true,
+        useCreateIndex: true,
+        useFindAndModify: false
+    }
+);
 
 app.listen(PORT, function () {
     console.log('App listening on PORT ' + PORT);
