@@ -5,7 +5,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-<img src="https://github.com/motoroboto/employeetracker/blob/main/assets/screenshot.png">
+<img src="https://github.com/motoroboto/workouttracker/blob/main/assets/screenshot.png">
 
 A simple fitness tracking web app. It utilizes a Mongo database with a Mongoose schema and it handles routes with Express. 
 
