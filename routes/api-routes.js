@@ -4,7 +4,7 @@ const Workout = require('../models/workout.js');
 router.get('/api/workout', (req, res) => {
     Workout.find({})
         .sort({ name: -1 })
-        .then((workout) => {
+        .then(workout => {
             res.json(workout);
         })
         .catch((err) => {
@@ -12,7 +12,7 @@ router.get('/api/workout', (req, res) => {
         });
 });
 
-router.post('/api/workouts', (req, res) => {
+router.post('/api/workouts', async (req, res) => {
     Workout.create({})
         .then((workout) => {
             res.json(workout);
